@@ -34,11 +34,25 @@ body {
 }
 .page-section {
     position: relative;
-    min-height: 100vh;
     background: url('../images/section-bg.jpg') no-repeat;
     background-position: top center;
     background-size: cover;
-    padding: 74px 0 50px;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: linear-gradient(107.54deg, rgba(23, 26, 28, 0.72) 0%, #5E5E57 100%);
+        opacity: 0.15;
+    }
+    &__wrapper{
+        z-index: 1;
+        position: relative;
+        min-height: 100vh;
+        padding: 74px 0 50px;
+    }
 }
 .title {
     @extend %sf-regular;
