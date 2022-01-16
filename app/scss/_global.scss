@@ -23,6 +23,9 @@ body {
     overflow-x: hidden;
     position: relative;
     color: #fff;
+    @extend %ubuntu-light;
+    font-size: 17px;
+    line-height: 26px;
 }
 .container {
     max-width: 1270px;
@@ -38,8 +41,11 @@ body {
     padding: 74px 0 50px;
 }
 .title {
+    @extend %sf-regular;
     font-size: 44px;
     line-height: 53px;
+    padding-left: 25px;
+    margin-bottom: 25px;
 }
 .scroll__btn {
     position: absolute;
