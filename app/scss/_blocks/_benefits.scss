@@ -1,0 +1,89 @@
+.benefits {
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 25px;
+    }
+    &__item {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 100px;
+        &:nth-child(even) {
+            margin-left: 40px;
+            transform: translateY(25px);
+        }
+    }
+    &__item-1, &__item-3 {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+        }
+    }
+    &__item-1 {
+        &::before {
+            height: 48px;
+            width: 245px;
+            right: -56px;
+            top: 31px;
+            background-image: url('../images/line-1.svg');
+        }
+    }
+    &__item-3 {
+        &::before {
+            height: 62px;
+            width: 463px;
+            right: -54px;
+            top: -70px;
+            background-image: url('../images/line-2.svg');
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            height: 40px;
+            width: 254px;
+            right: -55px;
+            top: 50px;
+            background-image: url('../images/line-3.svg');
+            background-repeat: no-repeat;
+            background-position: 0 0;
+        }
+    }
+    &__num {
+        @extend %ubuntu-bold;
+        font-size: 36px;
+        line-height: 41px;
+        margin-right: 10px;
+    }
+    &__img {
+        position: relative;
+        margin-right: 32px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            width: 193px;
+            height: 128px;
+            border: 2px solid #FFFFFF;
+            z-index: -1;
+        }
+    }
+    &__info {
+        width: 300px;
+    }
+    &__info-title {
+        width: 123px;
+        @extend %ubuntu-bold;
+        font-size: 21px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+    &__info-text {
+        @extend %ubuntu-light;
+        font-size: 15px;
+        line-height: 130%;
+    }
+}
