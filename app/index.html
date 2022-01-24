@@ -13,17 +13,17 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header__inner"><a class="logo" href="index.html">
+        <div class="header__inner" data-menuanchor="firstPage"><a class="logo" href="#firstPage">
             <picture class="logo__img">
               <source srcset="images/logo-mobile.png" media="(max-width: 600px)"><img src="images/logo.png" alt="Logo">
             </picture></a>
           <nav class="menu">
             <ul class="menu__list">
-              <li class="menu__list-item"><a class="menu__list-link" href="#">О ДРОНЕ</a></li>
-              <li class="menu__list-item"><a class="menu__list-link" href="#">ПРЕИМУЩЕСТВА</a></li>
-              <li class="menu__list-item"><a class="menu__list-link" href="#">ХАРАКТЕРИСТИКИ</a></li>
-              <li class="menu__list-item"><a class="menu__list-link" href="#">ВОПРОСЫ</a></li>
-              <li class="menu__list-item"><a class="menu__list-link" href="#">КОНТАКТЫ</a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="#secondPage">О ДРОНЕ</a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="#thirdPage">ПРЕИМУЩЕСТВА</a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="#fourthPage">ХАРАКТЕРИСТИКИ</a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="#fifthPage">ВОПРОСЫ</a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="#sixthPage">КОНТАКТЫ</a></li>
             </ul>
           </nav>
           <div class="header__info">
@@ -44,11 +44,11 @@
               <li class="top__social-item"><a class="top__social-link" href="#"><img src="images/instagram.svg" alt="Instagram"></a></li>
             </ul>
           </div>
-          <div class="scroll__btn"><a href="#product"><img src="images/arrow-down.svg" alt="Next Page"></a></div>
+          <div class="scroll__btn"><a href="#secondPage"><img src="images/arrow-down.svg" alt="Next Page"></a></div>
         </div>
       </div>
     </section>
-    <section class="page-section product" id="product">
+    <section class="page-section product" id="secondPage">
       <div class="page-section__wrapper">
         <div class="container">
           <h3 class="title product__title">Что такое Mavic 2 Pro?</h3>
@@ -69,16 +69,16 @@
               </div>
             </div>
           </div>
-          <div class="scroll__btn"><a href="#benefits"><img src="images/arrow-down.svg" alt="Next Page"></a></div>
+          <div class="scroll__btn"><a href="#thirdPage"><img src="images/arrow-down.svg" alt="Next Page"></a></div>
         </div>
       </div>
     </section>
-    <section class="page-section benefits" id="benefits">
+    <section class="page-section benefits" id="thirdPage">
       <div class="page-section__wrapper">
         <div class="container">
           <h3 class="title benefits__title">Преимущества</h3>
           <div class="benefits__items">
-            <div class="benefits__item benefits__item-1">
+            <div class="benefits__item">
               <div class="benefits__num">1</div>
               <div class="benefits__img"><img src="images/benefits-1.jpg" alt="Benefits"></div>
               <div class="benefits__info">
@@ -94,7 +94,7 @@
                 <p class="benefits__info-text">Усовершенствованный режим второго поколения распознаёт и отслеживает объекты ещё точнее, быстрее и умнее.</p>
               </div>
             </div>
-            <div class="benefits__item benefits__item-3">
+            <div class="benefits__item">
               <div class="benefits__num">3</div>
               <div class="benefits__img"><img src="images/benefits-3.jpg" alt="Benefits"></div>
               <div class="benefits__info">
@@ -111,42 +111,42 @@
               </div>
             </div>
           </div>
-          <div class="scroll__btn"><a href="#specification"><img src="images/arrow-down.svg" alt="Next Page"></a></div>
+          <div class="scroll__btn"><a href="#fourthPage"><img src="images/arrow-down.svg" alt="Next Page"></a></div>
         </div>
       </div>
     </section>
-    <section class="page-section specification" id="specification">
+    <section class="page-section specification" id="fourthPage">
       <div class="page-section__wrapper">
         <div class="container">
           <h3 class="title specification__title">Характеристики</h3>
           <div class="specification-inner">
             <div class="specification__item">
-              <div class="specification__box">
+              <div class="specification__box specification__box-1">
                 <h4 class="specification__box-title">Dlog-M 10 бит</h4>
                 <p class="specification__box-text">Mavic 2 Pro поддерживает цветовой профиль Dlog-M 10 бит с более широким динамическим диапазоном, дающим больше возможностей для цветокоррекции.</p>
               </div>
-              <div class="specification__box">
+              <div class="specification__box specification__box-2">
                 <h4 class="specification__box-title">Камера Hasselblad</h4>
                 <p class="specification__box-text">Камера Hasselblad L1D-20С известны эргономичным дизайном и превосходным качеством изображений.</p>
               </div>
             </div>
-            <div class="specification__item"><img class="specification__img" src="images/mavic.png" alt="Drone"></div>
+            <div class="specification__item specification__item--center"><img class="specification__img" src="images/mavic.png" alt="Drone"></div>
             <div class="specification__item">
-              <div class="specification__box">
+              <div class="specification__box specification__box-3">
                 <h4 class="specification__box-title">Матрица CMOS 1</h4>
                 <p class="specification__box-text">Зона активной работы новой 1-дюймовой матрицы CMOS в четыре раза превышает показатели Mavic Pro</p>
               </div>
-              <div class="specification__box">
+              <div class="specification__box specification__box-4">
                 <h4 class="specification__box-title">Видео HDR</h4>
                 <p class="specification__box-text">Благодаря поддержке видео 4K HDR 10 бит, Mavic 2 Pro можно подсоединить к совместимому с HLG 4K ТВ и просматривать запись в полном цветовом спектре</p>
               </div>
             </div>
           </div>
-          <div class="scroll__btn"><a href="#question"><img src="images/arrow-down.svg" alt="Next Page"></a></div>
+          <div class="scroll__btn"><a href="#fifthPage"><img src="images/arrow-down.svg" alt="Next Page"></a></div>
         </div>
       </div>
     </section>
-    <section class="page-section questions" id="question">
+    <section class="page-section questions" id="fifthPage">
       <div class="page-section__wrapper">
         <div class="container">
           <h3 class="title questions__title">Остались вопросы?</h3>
@@ -155,7 +155,7 @@
               <h4 class="questions__item-title">Какие отличия между Mavic 2 Pro и Mavic 2 Zoom?</h4>
               <p class="questions__item-text">В Mavic 2 улучшены практически все аспекты: камера, передача видеосигнала, полётное время, скорость, уровень шума, обнаружение препятствий в нескольких направлениях, интеллектуальные функции и уникальная функция Hyperlapse (гиперлапс).</p>
             </div>
-            <div class="questions__item">
+            <div class="questions__item questions__item--active">
               <h4 class="questions__item-title">Чем Mavic 2 лучше Mavic Pro?  </h4>
               <p class="questions__item-text">В Mavic 2 улучшены практически все аспекты: камера, передача видеосигнала, полётное время, скорость, уровень шума, обнаружение препятствий в нескольких направлениях, интеллектуальные функции и уникальная функция Hyperlapse (гиперлапс).</p>
             </div>
@@ -168,11 +168,11 @@
               <p class="questions__item-text">В Mavic 2 улучшены практически все аспекты: камера, передача видеосигнала, полётное время, скорость, уровень шума, обнаружение препятствий в нескольких направлениях, интеллектуальные функции и уникальная функция Hyperlapse (гиперлапс).</p>
             </div>
           </div>
-          <div class="scroll__btn"><a href="#contacts"><img src="images/arrow-down.svg" alt="Next Page"></a></div>
+          <div class="scroll__btn"><a href="#sixthPage"><img src="images/arrow-down.svg" alt="Next Page"></a></div>
         </div>
       </div>
     </section>
-    <section class="page-section contacts" id="contacts">
+    <section class="page-section contacts" id="sixthPage">
       <div class="page-section__wrapper">
         <div class="container"> 
           <h3 class="title contacts__title">Контакты</h3>

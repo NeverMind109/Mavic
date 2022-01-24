@@ -1,0 +1,64 @@
+.questions {
+    &__items {
+        max-width: 757px;
+        padding-bottom: 15px;
+    }
+    &__item {
+        background-color: rgba(0, 0, 0, 0.3);
+        max-width: 690px;
+        position: relative;
+        &:nth-child(3)::before {
+            position: absolute;
+            content: '';
+            width: 319px;
+            height: 125px;
+            top: -33px;
+            right: -386px;
+            background-image: url('../images/questions-bg.png');
+        }
+    }
+    &__item-title {
+        @extend %ubuntu-medium;
+        font-size: 21px;
+        line-height: 28px;
+        color: rgba(#fff, 0.8);
+        padding: 20px 10px 20px 40px;
+        margin-bottom: 4px;
+        position: relative;
+        cursor: pointer;
+        &::after {
+            content: '';
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 72px;
+            height: 67px;
+            background-color: #fff;
+            right: -72px;
+            top: 0;
+        }
+        &::before {
+            content: url('../images/accordion-arrow.svg');
+            position: absolute;
+            right: -45px;
+            z-index: 5;
+            transition: all 0.3s;
+        }
+    }
+    &__item-text {
+        font-size: 15px;
+        line-height: 150%;
+        padding: 0 5px 75px 50px;
+        margin: 0 0 4px;
+        display: none;
+    }
+    &__item.questions__item--active {
+        .questions__item-text {
+            display: block;
+        }
+    }
+    &__item-title.in::before{
+        transform: rotate(180deg);
+     }
+}

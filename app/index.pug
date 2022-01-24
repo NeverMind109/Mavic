@@ -12,23 +12,23 @@ html(lang="en")
     body
         header.header
             .container
-                .header__inner
-                    a.logo(href="index.html")
+                .header__inner(data-menuanchor="firstPage")
+                    a.logo(href="#firstPage")
                         picture.logo__img
                             source(srcset="images/logo-mobile.png" media="(max-width: 600px)")
                             img(src="images/logo.png" alt="Logo")
                     nav.menu
                         ul.menu__list
                             li.menu__list-item
-                                a.menu__list-link(href="#") О ДРОНЕ
+                                a.menu__list-link(href='#secondPage') О ДРОНЕ
                             li.menu__list-item
-                                a.menu__list-link(href="#") ПРЕИМУЩЕСТВА
+                                a.menu__list-link(href="#thirdPage") ПРЕИМУЩЕСТВА
                             li.menu__list-item
-                                a.menu__list-link(href="#") ХАРАКТЕРИСТИКИ
+                                a.menu__list-link(href="#fourthPage") ХАРАКТЕРИСТИКИ
                             li.menu__list-item
-                                a.menu__list-link(href="#") ВОПРОСЫ
+                                a.menu__list-link(href="#fifthPage") ВОПРОСЫ
                             li.menu__list-item
-                                a.menu__list-link(href="#") КОНТАКТЫ
+                                a.menu__list-link(href="#sixthPage") КОНТАКТЫ
                     .header__info
                         button.header__btn КУПИТЬ
                         a.header__phone(href="tel: 80505676767") 8 (050) 567 67 67
@@ -50,9 +50,9 @@ html(lang="en")
                                 a.top__social-link(href="#")
                                     img(src="images/instagram.svg" alt="Instagram")
                     .scroll__btn
-                        a(href="#product")
+                        a(href="#secondPage")
                             img(src="images/arrow-down.svg" alt="Next Page")
-        section.page-section.product#product
+        section.page-section.product#secondPage
             .page-section__wrapper
                 .container
                     h3.title.product__title Что такое Mavic 2 Pro?
@@ -76,14 +76,14 @@ html(lang="en")
                                 .product__slider-item
                                     img.product__slider-img(src="images/slider-1.jpg" alt="Slider Image")
                     .scroll__btn
-                        a(href="#benefits")
+                        a(href="#thirdPage")
                             img(src="images/arrow-down.svg" alt="Next Page")
-        section.page-section.benefits#benefits
+        section.page-section.benefits#thirdPage
             .page-section__wrapper
                 .container
                     h3.title.benefits__title Преимущества
                     .benefits__items
-                        .benefits__item.benefits__item-1
+                        .benefits__item
                             .benefits__num 1
                             .benefits__img
                                 img(src="images/benefits-1.jpg" alt="Benefits")
@@ -97,7 +97,7 @@ html(lang="en")
                             .benefits__info
                                 h4.benefits__info-title Active Track 2.0
                                 p.benefits__info-text Усовершенствованный режим второго поколения распознаёт и отслеживает объекты ещё точнее, быстрее и умнее.
-                        .benefits__item.benefits__item-3
+                        .benefits__item
                             .benefits__num 3
                             .benefits__img
                                 img(src="images/benefits-3.jpg" alt="Benefits")
@@ -112,33 +112,33 @@ html(lang="en")
                                 h4.benefits__info-title Крутая камера!
                                 p.benefits__info-text Технология Hyperlapse в четырёх режимах исполнения. Улучшенный фото режим HDR. Функция HyperLight для съёмки в условиях слабого освещения 4К съёмка
                     .scroll__btn
-                        a(href="#specification")
+                        a(href="#fourthPage")
                             img(src="images/arrow-down.svg" alt="Next Page")
-        section.page-section.specification#specification
+        section.page-section.specification#fourthPage
             .page-section__wrapper
                 .container
                     h3.title.specification__title Характеристики
                     .specification-inner
                         .specification__item
-                            .specification__box
+                            .specification__box.specification__box-1
                                 h4.specification__box-title Dlog-M 10 бит
                                 p.specification__box-text Mavic 2 Pro поддерживает цветовой профиль Dlog-M 10 бит с более широким динамическим диапазоном, дающим больше возможностей для цветокоррекции.
-                            .specification__box
+                            .specification__box.specification__box-2
                                 h4.specification__box-title Камера Hasselblad
                                 p.specification__box-text Камера Hasselblad L1D-20С известны эргономичным дизайном и превосходным качеством изображений.
-                        .specification__item
+                        .specification__item.specification__item--center
                             img.specification__img(src="images/mavic.png" alt="Drone")
                         .specification__item
-                            .specification__box
+                            .specification__box.specification__box-3
                                 h4.specification__box-title Матрица CMOS 1
                                 p.specification__box-text Зона активной работы новой 1-дюймовой матрицы CMOS в четыре раза превышает показатели Mavic Pro
-                            .specification__box
+                            .specification__box.specification__box-4
                                 h4.specification__box-title Видео HDR
                                 p.specification__box-text Благодаря поддержке видео 4K HDR 10 бит, Mavic 2 Pro можно подсоединить к совместимому с HLG 4K ТВ и просматривать запись в полном цветовом спектре
                     .scroll__btn
-                        a(href="#question")
+                        a(href="#fifthPage")
                             img(src="images/arrow-down.svg" alt="Next Page")
-        section.page-section.questions#question
+        section.page-section.questions#fifthPage
             .page-section__wrapper
                 .container
                     h3.title.questions__title Остались вопросы?
@@ -146,7 +146,7 @@ html(lang="en")
                         .questions__item
                             h4.questions__item-title Какие отличия между Mavic 2 Pro и Mavic 2 Zoom?
                             p.questions__item-text В Mavic 2 улучшены практически все аспекты: камера, передача видеосигнала, полётное время, скорость, уровень шума, обнаружение препятствий в нескольких направлениях, интеллектуальные функции и уникальная функция Hyperlapse (гиперлапс).
-                        .questions__item
+                        .questions__item.questions__item--active
                             h4.questions__item-title Чем Mavic 2 лучше Mavic Pro?  
                             p.questions__item-text В Mavic 2 улучшены практически все аспекты: камера, передача видеосигнала, полётное время, скорость, уровень шума, обнаружение препятствий в нескольких направлениях, интеллектуальные функции и уникальная функция Hyperlapse (гиперлапс).
                         .questions__item
@@ -156,9 +156,9 @@ html(lang="en")
                             h4.questions__item-title Является ли Mavic 2 водонепроницаемым？
                             p.questions__item-text В Mavic 2 улучшены практически все аспекты: камера, передача видеосигнала, полётное время, скорость, уровень шума, обнаружение препятствий в нескольких направлениях, интеллектуальные функции и уникальная функция Hyperlapse (гиперлапс).
                     .scroll__btn
-                        a(href="#contacts")
+                        a(href="#sixthPage")
                             img(src="images/arrow-down.svg" alt="Next Page")
-        section.page-section.contacts#contacts
+        section.page-section.contacts#sixthPage
             .page-section__wrapper
                 .container 
                     h3.title.contacts__title Контакты
