@@ -52,6 +52,7 @@ function libscss() {
     "node_modules/slick-carousel/slick/slick.css",
     "node_modules/slick-carousel/slick/slick-theme.css",
     "node_modules/animate.css/animate.css",
+    "node_modules/fullpage.js/dist/fullpage.css",
   ])
     .pipe(concat("_libs.scss"))
     .pipe(
@@ -69,6 +70,7 @@ function scripts() {
     "node_modules/jquery/dist/jquery.js",
     "node_modules/slick-carousel/slick/slick.js",
     "node_modules/wow.js/dist/wow.js",
+    "node_modules/fullpage.js/dist/fullpage.js",
     "app/js/main.js",
   ])
     .pipe(concat("main.min.js"))

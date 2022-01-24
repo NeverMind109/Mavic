@@ -1,0 +1,103 @@
+.contacts {
+    &__inner {
+        display: flex;
+        padding-left: 25px;
+    }
+    &__info {
+        width: 240px;
+        margin-right: 60px;
+    }
+    &__info-box {
+        margin-bottom: 30px;
+    }
+    &__info-title {
+        @extend %ubuntu-bold;
+        font-size: 21px;
+        line-height: 24px;
+        margin: 0  0 13px;
+    }
+    &__info-text {
+        font-size: 15px;
+        line-height: 130%;
+    }
+    &__info-email:hover {
+        text-decoration: underline;
+    }
+    &__form {
+        width: 570px;
+        margin-right: 106px;
+    }
+    &__form-title {
+        @extend %ubuntu-bold;
+        font-size: 21px;
+        line-height: 24px;
+        margin: 0  0 13px;
+    }
+    &__form-text {
+        font-size: 15px;
+        line-height: 130%;
+        margin: 0 0 12px;
+    }
+    &__form-line {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    &__form-input, &__form-textarea {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 15px;
+        border: none;
+        @extend %ubuntu-regular;
+        font-size: 13px;
+        line-height: 130%;
+        color: #fff;
+        &::placeholder {
+            @extend %ubuntu-regular;
+            font-size: 13px;
+            line-height: 130%;
+            color: rgba(#fff, 0.4);
+        }
+    }
+    &__form-input {
+        width: 49%;
+    }
+    &__form-textarea {
+        min-height: 144px;
+        width: 100%;
+        resize: none;
+        margin-bottom: 20px;
+    }
+    &__form-btn {
+        @extend %ubuntu-bold;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        border: 1px solid #FFFFFF;
+        background-color: transparent;
+        color: #fff;
+        border-radius: 2px;
+        padding: 9px 15px;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+            background-color: #fff;
+            color: #000;
+        }
+    }
+    &__social-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__social-item {
+        margin: 14px 0;
+    }
+    &__social-link {
+        opacity: 0.5;
+        transition: all 0.3s;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
