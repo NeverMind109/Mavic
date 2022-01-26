@@ -12,28 +12,33 @@ html(lang="en")
     body
         header.header
             .container
-                .header__inner(data-menuanchor="firstPage")
-                    a.logo(href="#firstPage")
-                        picture.logo__img
-                            source(srcset="images/logo-mobile.png" media="(max-width: 600px)")
-                            img(src="images/logo.png" alt="Logo")
+                .header__inner#header__nav
+                    div(data-menuanchor="top" data-anchor="top")
+                        a.logo(href="#top")
+                            picture.logo__img
+                                source(srcset="images/logo-mobile.png" media="(max-width: 600px)")
+                                img(src="images/logo.png" alt="Logo")
                     nav.menu
+                        button.menu__btn
+                            span.menu__btn-line
                         ul.menu__list
-                            li.menu__list-item
-                                a.menu__list-link(href='#secondPage') О ДРОНЕ
-                            li.menu__list-item
-                                a.menu__list-link(href="#thirdPage") ПРЕИМУЩЕСТВА
-                            li.menu__list-item
-                                a.menu__list-link(href="#fourthPage") ХАРАКТЕРИСТИКИ
-                            li.menu__list-item
-                                a.menu__list-link(href="#fifthPage") ВОПРОСЫ
-                            li.menu__list-item
-                                a.menu__list-link(href="#sixthPage") КОНТАКТЫ
+                            li.menu__list-item(data-menuanchor="products")
+                                a.menu__list-link(href="#products") О ДРОНЕ
+                            li.menu__list-item(data-menuanchor= "benefits")
+                                a.menu__list-link(href="#benefits") ПРЕИМУЩЕСТВА
+                            li.menu__list-item(data-menuanchor= "specification")
+                                a.menu__list-link(href="#specification") ХАРАКТЕРИСТИКИ
+                            li.menu__list-item(data-menuanchor= "questions")
+                                a.menu__list-link(href="#questions") ВОПРОСЫ
+                            li.menu__list-item(data-menuanchor= "contacts")
+                                a.menu__list-link(href="#contacts") КОНТАКТЫ
+                            li.menu__list-phone
+                                a.header__phone-menu(href="tel: 80505676767") 8 (050) 567 67 67
                     .header__info
                         button.header__btn КУПИТЬ
                         a.header__phone(href="tel: 80505676767") 8 (050) 567 67 67
         main#fullpage
-            section.page-section.top#firstPage
+            section.page-section.top(data-anchor="top")
                 .page-section__wrapper.top__wrapper
                     .container
                         .top__inner
@@ -51,9 +56,9 @@ html(lang="en")
                                     a.top__social-link(href="#")
                                         img(src="images/instagram.svg" alt="Instagram")
                         .scroll__btn
-                            a(href="#secondPage")
+                            a(href="#products")
                                 img(src="images/arrow-down.svg" alt="Next Page")
-            section.page-section.product#secondPage
+            section.page-section.product(data-anchor="products")
                 .page-section__wrapper
                     .container
                         h3.title.product__title Что такое Mavic 2 Pro?
@@ -77,9 +82,9 @@ html(lang="en")
                                     .product__slider-item
                                         img.product__slider-img(src="images/slider-1.jpg" alt="Slider Image")
                         .scroll__btn
-                            a(href="#thirdPage")
+                            a(href="#benefits")
                                 img(src="images/arrow-down.svg" alt="Next Page")
-            section.page-section.benefits#thirdPage
+            section.page-section.benefits(data-anchor="benefits")
                 .page-section__wrapper
                     .container
                         h3.title.benefits__title Преимущества
@@ -113,9 +118,9 @@ html(lang="en")
                                     h4.benefits__info-title Крутая камера!
                                     p.benefits__info-text Технология Hyperlapse в четырёх режимах исполнения. Улучшенный фото режим HDR. Функция HyperLight для съёмки в условиях слабого освещения 4К съёмка
                         .scroll__btn
-                            a(href="#fourthPage")
+                            a(href="#specification")
                                 img(src="images/arrow-down.svg" alt="Next Page")
-            section.page-section.specification#fourthPage
+            section.page-section.specification(data-anchor="specification")
                 .page-section__wrapper
                     .container
                         h3.title.specification__title Характеристики
@@ -137,9 +142,9 @@ html(lang="en")
                                     h4.specification__box-title Видео HDR
                                     p.specification__box-text Благодаря поддержке видео 4K HDR 10 бит, Mavic 2 Pro можно подсоединить к совместимому с HLG 4K ТВ и просматривать запись в полном цветовом спектре
                         .scroll__btn
-                            a(href="#fifthPage")
+                            a(href="#questions")
                                 img(src="images/arrow-down.svg" alt="Next Page")
-            section.page-section.questions#fifthPage
+            section.page-section.questions(data-anchor="questions")
                 .page-section__wrapper
                     .container
                         h3.title.questions__title Остались вопросы?
@@ -157,9 +162,9 @@ html(lang="en")
                                 h4.questions__item-title Является ли Mavic 2 водонепроницаемым？
                                 p.questions__item-text В Mavic 2 улучшены практически все аспекты: камера, передача видеосигнала, полётное время, скорость, уровень шума, обнаружение препятствий в нескольких направлениях, интеллектуальные функции и уникальная функция Hyperlapse (гиперлапс).
                         .scroll__btn
-                            a(href="#sixthPage")
+                            a(href="#contacts")
                                 img(src="images/arrow-down.svg" alt="Next Page")
-            section.page-section.contacts#sixthPage
+            section.page-section.contacts(data-anchor="contacts")
                 .page-section__wrapper
                     .container 
                         h3.title.contacts__title Контакты

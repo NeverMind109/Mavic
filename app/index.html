@@ -13,17 +13,20 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header__inner" data-menuanchor="firstPage"><a class="logo" href="#firstPage">
-            <picture class="logo__img">
-              <source srcset="images/logo-mobile.png" media="(max-width: 600px)"><img src="images/logo.png" alt="Logo">
-            </picture></a>
+        <div class="header__inner" id="header__nav">
+          <div data-menuanchor="top" data-anchor="top"><a class="logo" href="#top">
+              <picture class="logo__img">
+                <source srcset="images/logo-mobile.png" media="(max-width: 600px)"><img src="images/logo.png" alt="Logo">
+              </picture></a></div>
           <nav class="menu">
+            <button class="menu__btn"><span class="menu__btn-line"></span></button>
             <ul class="menu__list">
-              <li class="menu__list-item"><a class="menu__list-link" href="#secondPage">О ДРОНЕ</a></li>
-              <li class="menu__list-item"><a class="menu__list-link" href="#thirdPage">ПРЕИМУЩЕСТВА</a></li>
-              <li class="menu__list-item"><a class="menu__list-link" href="#fourthPage">ХАРАКТЕРИСТИКИ</a></li>
-              <li class="menu__list-item"><a class="menu__list-link" href="#fifthPage">ВОПРОСЫ</a></li>
-              <li class="menu__list-item"><a class="menu__list-link" href="#sixthPage">КОНТАКТЫ</a></li>
+              <li class="menu__list-item" data-menuanchor="products"><a class="menu__list-link" href="#products">О ДРОНЕ</a></li>
+              <li class="menu__list-item" data-menuanchor="benefits"><a class="menu__list-link" href="#benefits">ПРЕИМУЩЕСТВА</a></li>
+              <li class="menu__list-item" data-menuanchor="specification"><a class="menu__list-link" href="#specification">ХАРАКТЕРИСТИКИ</a></li>
+              <li class="menu__list-item" data-menuanchor="questions"><a class="menu__list-link" href="#questions">ВОПРОСЫ</a></li>
+              <li class="menu__list-item" data-menuanchor="contacts"><a class="menu__list-link" href="#contacts">КОНТАКТЫ</a></li>
+              <li class="menu__list-phone"><a class="header__phone-menu" href="tel: 80505676767">8 (050) 567 67 67</a></li>
             </ul>
           </nav>
           <div class="header__info">
@@ -33,7 +36,7 @@
       </div>
     </header>
     <main id="fullpage">
-      <section class="page-section top" id="firstPage">
+      <section class="page-section top" data-anchor="top">
         <div class="page-section__wrapper top__wrapper">
           <div class="container">
             <div class="top__inner">
@@ -45,11 +48,11 @@
                 <li class="top__social-item"><a class="top__social-link" href="#"><img src="images/instagram.svg" alt="Instagram"></a></li>
               </ul>
             </div>
-            <div class="scroll__btn"><a href="#secondPage"><img src="images/arrow-down.svg" alt="Next Page"></a></div>
+            <div class="scroll__btn"><a href="#products"><img src="images/arrow-down.svg" alt="Next Page"></a></div>
           </div>
         </div>
       </section>
-      <section class="page-section product" id="secondPage">
+      <section class="page-section product" data-anchor="products">
         <div class="page-section__wrapper">
           <div class="container">
             <h3 class="title product__title">Что такое Mavic 2 Pro?</h3>
@@ -70,11 +73,11 @@
                 </div>
               </div>
             </div>
-            <div class="scroll__btn"><a href="#thirdPage"><img src="images/arrow-down.svg" alt="Next Page"></a></div>
+            <div class="scroll__btn"><a href="#benefits"><img src="images/arrow-down.svg" alt="Next Page"></a></div>
           </div>
         </div>
       </section>
-      <section class="page-section benefits" id="thirdPage">
+      <section class="page-section benefits" data-anchor="benefits">
         <div class="page-section__wrapper">
           <div class="container">
             <h3 class="title benefits__title">Преимущества</h3>
@@ -112,11 +115,11 @@
                 </div>
               </div>
             </div>
-            <div class="scroll__btn"><a href="#fourthPage"><img src="images/arrow-down.svg" alt="Next Page"></a></div>
+            <div class="scroll__btn"><a href="#specification"><img src="images/arrow-down.svg" alt="Next Page"></a></div>
           </div>
         </div>
       </section>
-      <section class="page-section specification" id="fourthPage">
+      <section class="page-section specification" data-anchor="specification">
         <div class="page-section__wrapper">
           <div class="container">
             <h3 class="title specification__title">Характеристики</h3>
@@ -143,11 +146,11 @@
                 </div>
               </div>
             </div>
-            <div class="scroll__btn"><a href="#fifthPage"><img src="images/arrow-down.svg" alt="Next Page"></a></div>
+            <div class="scroll__btn"><a href="#questions"><img src="images/arrow-down.svg" alt="Next Page"></a></div>
           </div>
         </div>
       </section>
-      <section class="page-section questions" id="fifthPage">
+      <section class="page-section questions" data-anchor="questions">
         <div class="page-section__wrapper">
           <div class="container">
             <h3 class="title questions__title">Остались вопросы?</h3>
@@ -169,11 +172,11 @@
                 <p class="questions__item-text">В Mavic 2 улучшены практически все аспекты: камера, передача видеосигнала, полётное время, скорость, уровень шума, обнаружение препятствий в нескольких направлениях, интеллектуальные функции и уникальная функция Hyperlapse (гиперлапс).</p>
               </div>
             </div>
-            <div class="scroll__btn"><a href="#sixthPage"><img src="images/arrow-down.svg" alt="Next Page"></a></div>
+            <div class="scroll__btn"><a href="#contacts"><img src="images/arrow-down.svg" alt="Next Page"></a></div>
           </div>
         </div>
       </section>
-      <section class="page-section contacts" id="sixthPage">
+      <section class="page-section contacts" data-anchor="contacts">
         <div class="page-section__wrapper">
           <div class="container"> 
             <h3 class="title contacts__title">Контакты</h3>
